@@ -10,18 +10,40 @@ import { WeatherServiceService} from '../weather-service.service'
 export class WeatherComponentComponent implements OnInit {
 
   weatherData: any;
+  locationEnabled: boolean = true;
  
-  constructor(weatherService: WeatherServiceService) {
+  constructor(private weatherService: WeatherServiceService) {
     /*console.log(weatherService.weather);*/
-    weatherService.getWeather().subscribe(data => {console.log(data);this.weatherData = data; });
+    
    }
 
+  
 
   ngOnInit() {
-    
+    this.getLocation();
   }
 
+  public  getLocation(): void{
+    if(!navigator.geolocation) {
+      this.locationEnabled =false;
+    }
 
+            //TO UNDERSTAND：function.bind(this)
+    navigator.geolocation.getCurrentPosition(this.successCallback.bind(this));
+
+  }
+  public successCallback(position: Position): void {
+    this.locationEnabled = true;
+      this.weatherService.getWeather(position.coords).subscribe(data => 
+        { console.log(data);
+          this.weatherData = data; 
+        });
+    }
+  
+    error() {
+      console.log('Get position error');
+      this.locationEnabled = false;
+    }
 
 
 }
