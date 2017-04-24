@@ -8,20 +8,22 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule} from '@angular/material';
 import 'hammerjs';
-import { WeatherComponentComponent } from './weatherComp/weather-component/weather-component.component';
-import { WeatherServiceService} from './weatherComp/weather-service.service'
+import { WeatherComponent } from './weatherComp/weather/weather.component';
+import { WeatherServiceService} from './weatherComp/weather-service.service';
+import { AppRoutingModule } from  './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherComponentComponent,
-    
+    WeatherComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule
+    MaterialModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
   ],
   providers: [WeatherServiceService],
   bootstrap: [AppComponent]

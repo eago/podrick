@@ -1,4 +1,17 @@
-<h1 class="align-middle">
+<!--<h1 class="align-middle">
   {{title}}
-</h1>
-<app-weather-component></app-weather-component>
+</h1>-->
+
+
+<!--<md-tab-group>
+  <md-tab label="Today">
+  </md-tab>
+  <md-tab label="Westeros">
+  </md-tab>
+</md-tab-group>-->
+
+<nav md-tab-nav-bar>
+  <a md-tab-link routerLink="/today" routerLinkActive="active">Today</a>
+  <a md-tab-link >Westeros</a>
+</nav>
+<router-outlet></router-outlet>
