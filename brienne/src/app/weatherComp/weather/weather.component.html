@@ -3,13 +3,40 @@
     <md-card-title class="info ">Weather Board</md-card-title>
     <!--<img src="./../../../assets/images/messiTheKing.jpg" class="md-card-image align-middle bg-blue" alt="image caption">-->
     <md-card-content class="align-middle bg-cloudy">
-      <h2>{{weatherData?.name}}</h2>
+      <div class="flex-container">
+        <div >
+      <md-icon>location_city</md-icon><span> {{weatherData?.name}}</span>
+        </div>
+        <div>
+      <span>Humidity: {{weatherData?.main.humidity}} %</span>
+        </div>
+        <div>
+      <span>Tempreture: {{weatherData?.main.temp}} ºC</span>
+        </div>
+      </div>
       <label class="mat-primary" >King is here.</label>
     </md-card-content>
     <md-card-actions layout="row" layout-align="end center">
-     <button md-button class="btn-primary">Like hime</button>
+     <button md-button class="btn-primary" (click)="showSpinner()">show spinner</button>
       <button md-button>Love hime</button>
     </md-card-actions>
   </md-card>
+</div>
 
+<hr>
+
+
+<div *ngIf="isSpinnerActive" class="sk-fading-circle">
+  <div class="sk-circle1 sk-circle"></div>
+  <div class="sk-circle2 sk-circle"></div>
+  <div class="sk-circle3 sk-circle"></div>
+  <div class="sk-circle4 sk-circle"></div>
+  <div class="sk-circle5 sk-circle"></div>
+  <div class="sk-circle6 sk-circle"></div>
+  <div class="sk-circle7 sk-circle"></div>
+  <div class="sk-circle8 sk-circle"></div>
+  <div class="sk-circle9 sk-circle"></div>
+  <div class="sk-circle10 sk-circle"></div>
+  <div class="sk-circle11 sk-circle"></div>
+  <div class="sk-circle12 sk-circle"></div>
 </div>

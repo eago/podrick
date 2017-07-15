@@ -11,7 +11,10 @@
 </md-tab-group>-->
 
 <nav md-tab-nav-bar>
-  <a md-tab-link routerLink="/today" routerLinkActive="active">Today</a>
-  <a md-tab-link >Westeros</a>
+  <!--<a class="navbar" md-tab-link routerLink="/today" routerLinkActive="active">Today</a>
+  <a class="navbar" md-tab-link routerLink="/westeros" routerLinkActive="active">Westeros</a>-->
+
+  <a class="btn" md-tab-link routerLink="/today" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">Today</a>
+  <a class="btn" md-tab-link routerLink="/westeros" routerLinkActive #rlb="routerLinkActive" [active]="rlb.isActive" >Westeros</a>
 </nav>
 <router-outlet></router-outlet>

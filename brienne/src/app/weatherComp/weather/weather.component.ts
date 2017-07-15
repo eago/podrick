@@ -9,6 +9,7 @@ import { WeatherServiceService} from '../weather-service.service'
 })
 export class WeatherComponent implements OnInit {
 
+  protected isSpinnerActive: boolean = false;
   weatherData: any;
   locationEnabled: boolean = true;
  
@@ -17,6 +18,10 @@ export class WeatherComponent implements OnInit {
     
    }
 
+  public showSpinner(): void {
+    this.isSpinnerActive = !this.isSpinnerActive;
+    console.log("show spinner" + this.isSpinnerActive);
+  }
 
   ngOnInit() {
     this.getLocation();
