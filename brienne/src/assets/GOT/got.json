@@ -1,0 +1,121 @@
+[
+  {
+    "layer": "Stark",
+    "chars": [
+      {
+        "name":"sansa",
+        "iconUrl":"sansa.png",
+        "coords":[49.55372551347579, -116.806640625],
+        "iconName":"sansaIcon",
+        "description":"<div><h2 style='line-height: 1;'>Sansa Stark</h2></div>"
+      },
+      {
+        "name":"bran",
+        "iconUrl":"bran.png",
+        "coords":[49.55372551347579, -116.806640625],
+        "iconName":"branIcon",
+        "description":"<div><h2 style='line-height: 1;'>Bran Stark<br /><span style='color: #999;font-size:10px;font-weight: normal;'>Bran, Little Lord, Three-eyed Raven</span></h2><div>Bran was born and raised at Winterfell. He has an older brother Robb, and a younger brother Rickon. He has two older sisters, Sansa and Arya.</div><div><a href='http://gameofthrones.wikia.com/wiki/Bran_Stark'>http://gameofthrones.wikia.com/wiki/Bran_Stark</a></div></div>"
+      },
+      {
+        "name":"arya",
+        "iconUrl":"arya.png",
+        "coords":[28.304380682962783, -72.59765625],
+        "iconName":"aryaIcon",
+        "description":"<div><h2 style='line-height: 1;'>Arya Stark<h2></div>"
+      },
+      {
+        "name":"snow",
+        "iconUrl":"snow.png",
+        "coords":[62.59334083012024, -105.46875],
+        "iconName":"snowIcon",
+        "description":"<div><h2 style='line-height: 1;'>Jon Snow<br /><span style='color: #999;font-size:10px;font-weight: normal;'>King in the North, 998th Lord Commander of the Night's Watch</span></h2><div>When Eddard Stark returned home from Robert's Rebellion he presented the infant Jon as his bastard son which he fathered while on campaign - never telling anyone, including Jon, who his mother was.</div><div><a href='http://gameofthrones.wikia.com/wiki/Jon_Snow' target='blank'>http://gameofthrones.wikia.com/wiki/Jon_Snow</a></div></div>"
+      },
+      {
+        "name":"theon",
+        "iconUrl":"theon.png",
+        "coords":[22.187404991398775, -137.8125],
+        "iconName":"theonIcon",
+        "description":"<div><h2 style='line-height: 1;'>Theon Greyjoy</a></div>"
+      }
+    ]
+  },
+  {
+    "layer": "Lannisters",
+    "chars": [
+      {
+        "name":"tyrion",
+        "iconUrl":"tyrion.png",
+        "coords":[-28.381735043223095, 14.3],
+        "iconName":"tyrionIcon",
+        "description":"<div><h2 style='line-height: 1;'>Tyrion Lannister<br /><span style='color: #999;font-size:10px;font-weight: normal;'>Hand of the Queen, Master of Coin, Hand of the King</span></h2><div>Tyrion Lannister is the youngest son of Joanna Lannister and Lord Tywin Lannister. Tywin is the head of House Lannister, the richest man in the Seven Kingdoms and Lord Paramount of the Westerlands.</div><div><a href='http://gameofthrones.wikia.com/wiki/Tyrion_Lannister'>http://gameofthrones.wikia.com/wiki/Tyrion_Lannister</a></div></div>"
+      },
+      {
+        "name":"cersei",
+        "iconUrl":"cersi.png",
+        "coords":[3.732708321335859, -142.470703125],
+        "iconName":"cersiIcon",
+        "description":"<div><h2 style='line-height: 1;'>Cersei Lannister</h2></div>"
+      },
+      {
+        "name":"joffrey",
+        "iconUrl":"joffrey.png",
+        "coords":[-2.986927393334863, -105.99609375],
+        "iconName":"joffreyIcon",
+        "description":"<div><h2 style='line-height: 1;'>Joffrey Baratheon</h2></div>"
+      }
+    ]
+  },
+  {
+    "layer": "Dothraki",
+    "chars": [
+      {
+        "name":"khal",
+        "iconUrl":"khal.png",
+        "coords":[5.61598581915534, 48.8671875],
+        "iconName":"khalIcon",
+        "description":"<div><h2 style='line-height: 1;'>Khal Drogo</a></div>"
+      },
+      {
+        "name":"khalessi",
+        "iconUrl":"khalessi.png",
+        "coords":[-1.142502403706165, -71.8505859375],
+        "pathCoords":[[-1.142502403706165,-71.8505859375],[-1.437616057814226,-66.85930274265331],[-1.7327297119222869,-61.86801954780662],[-2.027843366030348,-56.876736352959924],[-2.322957020138409,-51.885453158113236],[-2.6180706742464697,-46.89416996326655],[-2.9131843283545305,-41.902886768419854],[-3.2082979824625912,-36.91160357357316],[-3.503411636570652,-31.920320378726473],[-3.798525290678713,-26.929037183879792],[-4.093638944786774,-21.937753989033105],[-4.388752598894834,-16.94647079418641],[-4.683866253002896,-11.955187599339709],[-4.978979907110957,-6.963904404493022],[-5.238908869773361,-1.9750894055969266],[-4.249840501032953,2.9261087909624948],[-3.2607721322925465,7.827306987521901],[-2.2717037635521407,12.728505184081309],[-1.2826353948117317,17.62970338064073],[-0.2935670260713259,22.530901577200137],[0.6955013426690799,27.432099773759543],[1.6845697114094857,32.33329797031895],[2.6736380801498916,37.23449616687836],[3.6627064488902983,42.135694363437764],[4.651774817630707,47.03689255999719],[1.8968965578213983,47.922563947178695],[-2.9231587934132763,46.59325344506336],[-7.743214144647936,45.26394294294803],[-12.563269495882597,43.934632440832694],[-17.383324847117258,42.60532193871736],[-22.203380198351915,41.27601143660203],[-27.023435549586576,39.9467009344867],[-30.754304506392657,42.207377261784984],[-34.023169417856856,45.99083100018303],[-37.292034329321055,49.77428473858107],[-40.560899240785254,53.55773847697912],[-43.82976415224945,57.34119221537716],[-47.09862906371366,61.124645953775214],[-50.13406644456542,64.39913139761205],[-49.39947036005042,59.45338892629235],[-48.66487427553543,54.5076464549727],[-47.93027819102044,49.56190398365306],[-47.19568210650545,44.616161512333385],[-46.46108602199046,39.670419041013744],[-45.72648993747546,34.72467656969407],[-44.99189385296047,29.778934098374428],[-44.25729776844548,24.83319162705478],[-43.52270168393049,19.887449155735105],[-42.7881055994155,14.941706684415465],[-42.13617964132301,9.984719916920078],[-40.00611670225045,8.021693067121385],[-35.64562469808019,10.468345776756912],[-31.285132693909908,12.914998486392452],[-28.218163616074214,12.518337235549321],[-27.197518726963576,7.623617222072373],[-26.176873837852927,2.7288972085953684],[-25.156228948742278,-2.1658228048816337],[-24.135584059631643,-7.0605428183585826],[-23.114939170520994,-11.955262831835585],[-22.094294281410345,-16.849982845312596],[-21.073649392299707,-21.744702858789537],[-20.053004503189058,-26.639422872266536],[-19.03235961407841,-31.53414288574355],[-18.011714724967774,-36.42886289922049],[-16.991069835857125,-41.323582912697496],[-15.970424946746476,-46.218302926174495],[-14.949780057635838,-51.113022939651444],[-13.929135168525189,-56.00774295312846],[-12.90849027941454,-60.90246296660547],[-11.887845390303905,-65.79718298008241],[-10.867200501193256,-70.69190299355941],[-9.846555612082607,-75.58662300703642],[-8.825910722971958,-80.4813430205134],[-7.80526583386132,-85.37606303399036],[-6.784620944750671,-90.27078304746738],[-5.7639760556400255,-95.16550306094437],[-4.743331166529387,-100.06022307442132],[-3.7226862774187275,-104.95494308789839],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875],[-3.688855143147035,-105.1171875]],
+        "iconName":"khalessiIcon",
+        "description":"<div><h2 style='line-height: 1;'>Khalessi</h2><button class='animateKhalessi'>Animate Path</button></div>"
+      },
+      {
+        "name":"greyworm",
+        "iconUrl":"greyworm.png",
+        "coords":[-41.50857729743933, 6.8115234375],
+        "iconName":"greywormIcon",
+        "description":"<div><h2 style='line-height: 1;'>Grey Worm</h2><div>Grey Worm was originally a boy taken into slavery by the Good Masters of Astapor, an oligarchy of slave-traders dedicated to the training and commerce of Unsullied, warrior-eunuch slaves trained into absolute obedience since early childhood. It later is revealed that he is originally from the Summer Islands and was taken by the slavers in a raid as a baby.</div><div><a href='http://gameofthrones.wikia.com/wiki/Grey_Worm'>http://gameofthrones.wikia.com/wiki/Grey_Worm</a></div></div></div>"
+      }
+    ]
+  },
+  {
+    "layer": "Other",
+    "chars": [
+      {
+        "name":"margaery",
+        "iconUrl":"marjorie.png",
+        "coords":[-18.104087015773946, -128.9794921875],
+        "iconName":"margaeryIcon",
+        "description":"<div><h2 style='line-height: 1;'>Margaery Tyrell</a></h2></div>"
+      },
+      {
+        "name":"redwoman",
+        "iconUrl":"redwoman.png",
+        "coords":[-70.78690984117927, 135.9228515625],
+        "iconName":"redwomanIcon",
+        "description":"<div><h2 style='line-height: 1;'>Melisandre of Assha<br /><span style='color: #999;font-size:10px;font-weight: normal;'>Lady Melisandre, The Red Woman, The Red Witch</span></h2><div>Originally born a slave in Essos centuries ago, Melisandre is a Red Priestess of the Lord of Light, a deity that is not widely worshiped in Westeros. Hailing from Asshai, a country located in the far east of the continent of Essos, she claims to wield powerful magical abilities, particularly the power of prophecy. Melisandre wears a large ruby necklace that seems to glow whenever she performs her magic.</div><div> <a href='http://gameofthrones.wikia.com/wiki/Melisandre' target='_blank'>http://gameofthrones.wikia.com/wiki/Melisandre</a></div>"
+      },
+      {
+        "name":"littlefinger",
+        "iconUrl":"littlefinger.png",
+        "coords":[32.694865977875075, -92.98828125],
+        "iconName":"littlefingerIcon",
+        "description":"<div><h2 style='line-height: 1;'>Littlefinger</a></div>"
+      }
+    ]
+  }
+]

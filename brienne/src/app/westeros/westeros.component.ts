@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+
+import {Http, Response} from '@angular/http'
 
 import * as L from 'leaflet'
 
@@ -9,7 +11,10 @@ import * as L from 'leaflet'
 })
 export class WesterosComponent implements OnInit {
 
-  constructor() { }
+  family : any;
+  error : any;
+
+  constructor(private http : Http) { }
 
   ngOnInit() {
 
@@ -20,6 +25,9 @@ export class WesterosComponent implements OnInit {
   }).addTo(westerosMap);*/
   
   var westerosMap = L.map('westerosMap').setView([0,0],3);
+
+  this.http.get("../../assets/GOT/got.json").
+  map(res => this.family = res).catch(error => this.error=error)
 
   L.tileLayer('../../assets/GOT/{z}/{x}/{y}.png', {
       attribution: 'Game of Thrones',
