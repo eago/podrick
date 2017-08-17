@@ -13,6 +13,8 @@ export class WesterosComponent implements OnInit {
 
   family : any;
   error : any;
+
+  //leaflet map
   westerosMap : any;
 
   constructor(private http : Http) { }
@@ -27,10 +29,7 @@ export class WesterosComponent implements OnInit {
   
   this.westerosMap = L.map('westerosMap').setView([0,0],3);
 
-
-
-
-
+  //baselayer we need to display in the map
   L.tileLayer('../../assets/GOT/{z}/{x}/{y}.png', {
       attribution: 'Game of Thrones',
       maxZoom: 5,
@@ -47,26 +46,42 @@ export class WesterosComponent implements OnInit {
       console.log(e.latlng);
     });
 
+    //get json data
     this.http.get("../../assets/GOT/got.json").map(res =>  res.json()).catch(error => this.error=error).subscribe(
       res => this.addMapLayer(res)
     );
   }
 
+
+
   public addMapLayer(data : any) {
 
+    //create custom icon class
+    var GotIcon = L.Icon.extend({
+      options: {
+        iconSize: [40, 40],
+        iconAnchor: [40, 40],
+        popupAnchor: [-20, -44]
+      }
+    });
+
+    //variable to store our overlayers
     var overlay = {};
 
+    //read and use json data
     for (var i = 0; i < data.length; i++) {
       var groupChars = [];
 
       for (var j = 0; j < data[i].chars.length; j++) {
 
+        //create markers belong to different layers with custom icons
         let character = data[i].chars[j];
-
+        let icon = new GotIcon({iconUrl: '../../assets/GOT/images/' + character.iconUrl});
         let desc = character.description;
-        let marker = L.marker(character.coords).bindPopup(desc);
+        let marker = L.marker(character.coords, {icon: icon}).bindPopup(desc);
 
         groupChars.push(marker);
+
 
       }
 
@@ -76,6 +91,7 @@ export class WesterosComponent implements OnInit {
       
     }
 
+    //create layer control and add overlayers
     L.control.layers(null, overlay).addTo(this.westerosMap);
 
     
