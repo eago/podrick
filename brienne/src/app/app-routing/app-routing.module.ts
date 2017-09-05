@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router'
 
 import { WeatherComponent } from '../weatherComp/weather/weather.component';
 import { WesterosComponent } from '../westeros/westeros.component';
+import { BlogComponent } from '../blog/blog.component';
 
 
 const appRoutes: Routes = [
   {path: 'today', component: WeatherComponent},
   {path: 'westeros', component: WesterosComponent},
+  {path: 'blog', component: BlogComponent},
 
   {path: '', redirectTo: 'today', pathMatch: 'full'},
 ];

@@ -12,12 +12,14 @@ import { WeatherComponent } from './weatherComp/weather/weather.component';
 import { WeatherServiceService} from './weatherComp/weather-service.service';
 import { AppRoutingModule } from  './app-routing/app-routing.module';
 import { WesterosComponent } from './westeros/westeros.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponent,
     WesterosComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
